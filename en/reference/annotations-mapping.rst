@@ -49,6 +49,10 @@ Document
 Optional attributes:
 
 -  **nodeType**: PHPCR type for this node, default ``nt:unstructured``.
+-  **uniqueNodeType**: If this document uses a unique node type, set to ``true``
+   in order to support outer joins correctly; unnecessary in all other cases. See
+   :ref:`left outer join <_qbref_method_querybuilder_addjoinleftouter>` and
+   :ref:`right outer join <_qbref_method_querybuilder_addjoinrightouter>`.
 -  **repositoryClass**: Name of the repository to use for this document.
 -  **versionable**: *(string)* Set to ``simple`` or ``full`` to enable versioning 
    (respectively simple or full level), ``false`` to disable versioning
